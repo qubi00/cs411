@@ -17,30 +17,30 @@ class MigrationPath:
         self.duration = duration
         self.path_id = path_id
 
-    def create_migration_path(species: str, start_location: Habitat, destination: Habitat, duration: Optional[int] = None) -> None:
+    def create_migration_path(self, species: str, start_location: Habitat, destination: Habitat, duration: Optional[int] = None) -> None:
         pass
 
-    def update_migration_path_details(path_id: int, **kwargs) -> None:
+    def update_migration_path_details(self, path_id: int, **kwargs) -> None:
         pass
 
-    def remove_migration_path(path_id: int) -> None:
+    def remove_migration_path(self, path_id: int) -> None:
         pass
 
-    def get_migration_path_details(path_id) -> dict:
+    def get_migration_path_details(self, path_id) -> dict:
         pass
 
-    def get_migration_path_by_id(path_id: int) -> MigrationPath:
+    def get_migration_path_by_id(self, path_id: int) -> MigrationPath:
         pass
 
-    def get_migration_paths() -> list[MigrationPath]:
+    def get_migration_paths(self) -> list[MigrationPath]:
         pass
 
-    def get_migration_paths_by_destination(destination: Habitat) -> list[MigrationPath]:
+    def get_migration_paths_by_destination(self, destination: Habitat) -> list[MigrationPath]:
         pass
 
-    def get_migration_paths_by_species(species: str) -> list[MigrationPath]:
+    def get_migration_paths_by_species(self, species: str) -> list[MigrationPath]:
         pass
 
-    def get_migration_paths_by_start_location(start_location: Habitat) -> list[MigrationPath]:
+    def get_migration_paths_by_start_location(self, start_location: Habitat) -> list[MigrationPath]:
         pass
     
