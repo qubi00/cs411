@@ -14,9 +14,9 @@ class Animal:
             self.species = species
             self.animals = animals or []
 
-    def update_animal_details(self, animal_id: int, **kwargs: Any) -> None:
+    def update_animal_details(self, **kwargs: Any) -> None:
         pass
 
-    def get_animal_details(self, animal_id) -> dict[str, Any]:
+    def get_animal_details(self) -> dict[str, Any]:
         pass
 
